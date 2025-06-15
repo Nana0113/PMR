@@ -7,6 +7,9 @@ import { Badge } from "@/components/ui/badge"
 import { Battery, Calendar, Car, Clock, Lock, MapPin } from "lucide-react"
 import { Logo } from "@/components/logo"
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 // Sample history data
 const historyData = [
   {

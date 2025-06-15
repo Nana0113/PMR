@@ -13,6 +13,9 @@ import { Battery, MapPin, MessageSquare, Phone } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import { Logo } from "@/components/logo"
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 // Simulated status updates
 const statusUpdates = [
   { status: "searching", message: "Searching for nearby providers...", time: 0 },

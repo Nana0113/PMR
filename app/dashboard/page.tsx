@@ -10,6 +10,9 @@ import { Battery, Calendar, CircleDashed, Clock, Droplet, Lock, Mail, MapPin, Ph
 import { useRouter } from "next/navigation"
 import { Logo } from "@/components/logo"
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export default function DashboardPage() {
   const router = useRouter()
   const [activeRequest, setActiveRequest] = useState(false)
@@ -197,33 +200,6 @@ export default function DashboardPage() {
                             Details
                           </Button>
                         </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                  <CardFooter>
-                    <Button variant="outline" className="w-full" onClick={() => router.push("/history")}>
-                      View All History
-                    </Button>
-                  </CardFooter>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Tips & Resources</CardTitle>
-                    <CardDescription>Helpful information for EV owners</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div className="rounded-lg border p-3">
-                        <h3 className="font-medium">Maximize Battery Life</h3>
-                        <p className="text-sm text-muted-foreground">Tips for extending your EV's battery longevity</p>
-                      </div>
-                      <div className="rounded-lg border p-3">
-                        <h3 className="font-medium">Winter Driving Guide</h3>
-                        <p className="text-sm text-muted-foreground">How to prepare your EV for cold weather</p>
-                      </div>
-                      <div className="rounded-lg border p-3">
-                        <h3 className="font-medium">Charging Network Map</h3>
-                        <p className="text-sm text-muted-foreground">Find compatible charging stations nationwide</p>
                       </div>
                     </div>
                   </CardContent>

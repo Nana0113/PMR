@@ -1,0 +1,15 @@
+{
+  "/pricing/page": "app/pricing/page.js",
+  "/responder/job/[id]/page": "app/responder/job/[id]/page.js",
+  "/signup/page": "app/signup/page.js",
+  "/responder/dashboard/page": "app/responder/dashboard/page.js",
+  "/responder/login/page": "app/responder/login/page.js",
+  "/page": "app/page.js",
+  "/_not-found": "app/_not-found.js",
+  "/history/page": "app/history/page.js",
+  "/register/page": "app/register/page.js",
+  "/login/page": "app/login/page.js",
+  "/request/page": "app/request/page.js",
+  "/track/page": "app/track/page.js",
+  "/dashboard/page": "app/dashboard/page.js"
+}

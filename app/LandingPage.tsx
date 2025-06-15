@@ -1,9 +1,14 @@
+'use client';
+
 import { Button } from "../components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card"
 import { ArrowRight, Battery, ChevronRight, CircleDashed, Droplet, Lock, Mail, Phone, Zap } from "lucide-react"
 import Link from "next/link"
 
 import { Logo } from "../components/logo"
+
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export function LandingPage() {
   return (
@@ -170,17 +175,17 @@ export function LandingPage() {
           <div className="grid gap-6 md:grid-cols-3">
             <div className="rounded-lg border bg-white p-6 shadow-sm flex flex-col items-center">
               <div className="flex mb-2 text-yellow-400">★★★★★</div>
-              <p className="text-center text-lg font-medium mb-4">“The mobile charging service saved my day! Fast, friendly, and professional.”</p>
+              <p className="text-center text-lg font-medium mb-4">"The mobile charging service saved my day! Fast, friendly, and professional."</p>
               <span className="text-sm font-semibold text-gray-700">— Jessica T.</span>
             </div>
             <div className="rounded-lg border bg-white p-6 shadow-sm flex flex-col items-center">
               <div className="flex mb-2 text-yellow-400">★★★★★</div>
-              <p className="text-center text-lg font-medium mb-4">“I was stranded with a dead battery. They arrived quickly and got me back on the road!”</p>
+              <p className="text-center text-lg font-medium mb-4">"I was stranded with a dead battery. They arrived quickly and got me back on the road!"</p>
               <span className="text-sm font-semibold text-gray-700">— Michael R.</span>
             </div>
             <div className="rounded-lg border bg-white p-6 shadow-sm flex flex-col items-center">
               <div className="flex mb-2 text-yellow-400">★★★★★</div>
-              <p className="text-center text-lg font-medium mb-4">“Excellent service and very knowledgeable staff. Highly recommend for EV owners.”</p>
+              <p className="text-center text-lg font-medium mb-4">"Excellent service and very knowledgeable staff. Highly recommend for EV owners."</p>
               <span className="text-sm font-semibold text-gray-700">— Priya S.</span>
             </div>
           </div>

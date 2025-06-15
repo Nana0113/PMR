@@ -13,6 +13,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useToast } from "@/hooks/use-toast"
 import { Logo } from "@/components/logo"
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export default function LoginPage() {
   const router = useRouter()
   const { toast } = useToast()
