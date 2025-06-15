@@ -1,4 +1,8 @@
+// This is a server component
 import Link from 'next/link';
+
+export const dynamic = 'force-static';
+export const revalidate = false;
 
 export default function NotFound() {
   return (
